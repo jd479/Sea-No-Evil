@@ -22,9 +22,9 @@ The project will include:
 The game will implement:
 
   0. vanilla JavaScript
-  0. `Easel.js` and `HTML5 Canvas` for fish model rendering
+  0. `HTML5 Canvas` for fish model rendering
 
-It will also have 2 scripts:
+It will also have multiple scripts:
 
 `game.js` which will handle the logic for when the game is over.
 
@@ -32,10 +32,10 @@ It will also have 2 scripts:
 
 ## Implementation Timeline
 
-__Day 1__: Install Easel.js and have all necessary packages downloaded and ready to use. Have the basic outline ready for the two script files. Have `webpack` running and saving successfully.
+__Day 1__: Install all necessary packages downloaded and ready to use. Have the basic outline ready for the two script files. Have `webpack` running and saving successfully.
 
 Goals:
-  0. Render fish models and background after learning Easel.js.
+  0. Render fish models and background after learning Canvas.
 
 __Day 2__: Implement logic for reading keydown inputs from the user to move the user fish. Implement logic for "AI" fish (just horizontally).
 
@@ -53,4 +53,4 @@ __Day 4__: Add costumes for the user to customize appearance.
 
 ## Bonus:
 
-Collectible power-ups for more dynamic gameplay. 
+Collectible power-ups for more dynamic gameplay.
