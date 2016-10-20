@@ -4,11 +4,44 @@
   </head>
 
   <body>
+    <div class="header group">
+      <h1 class="game-title">Sea No Evil</h1>
+      <ul class="links">
+        <li>
+          <a href="https://www.linkedin.com/in/jeffreydu">LinkedIn</a>
+        </li>
 
-    <canvas id="canvas" width="900" height="600" style="background: url('./images/ocean.png')">
-    </canvas>
+        <li>
+          <a href="https://github.com/jd479/">Github</a>
+        </li>
+
+        <li>
+          <a href="#">Portfolio</a>
+        </li>
+
+      </ul>
+    </div>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+      <div class="canvas-container">
+        <canvas id="canvas" style="background: url('./images/ocean.png')">
+        </canvas>
+      </div>
+
+    <div class="instruction-box group">
+      <p class="instruction-text">
+        Welcome to Sea No Evil! You are an evil shark whose goal is to take over the world...
+        or at least this tank. Eat smaller fish in order to grow and become the Tank Titan.
+        If you get eaten by a bigger fish, the game's over!
+      </p>
+      <img src="images/controls.png" class="instruction-image" alt="controls"/>
+
+    </div>
     <script type="application/javascript" src="lib/keymaster.js"></script>
     <script type="application/javascript" src="lib/bundle.js"></script>
-    <script type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="css/game.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
   </body>
 </html>

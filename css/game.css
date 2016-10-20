@@ -1,0 +1,75 @@
+body {
+  font-family: 'Gloria Hallelujah', cursive;
+  background-color: #7ce0f9;
+}
+
+.header {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  font-size: 30px;
+  color: seagreen;
+  float: left;
+  padding: 12px;
+}
+
+.group {
+  clear: both;
+  display: block;
+  content: "";
+}
+
+.canvas-container {
+  width: 100%;
+  text-align:center;
+}
+
+ul {
+  list-style: none;
+  float: right;
+  margin-top: 45px;
+}
+
+li {
+  float: left;
+  border-right: 1px solid black;
+}
+
+li:last-child {
+  border: none;
+}
+
+a {
+  text-decoration: none;
+  padding: 10px;
+  color: black;
+  font-size: 20px;
+}
+
+
+
+canvas {
+  display: inline;
+  border: 5px solid black;
+}
+
+.instruction-box {
+  margin: 0 auto;
+  width: 1000px;
+}
+
+.instruction-text {
+  float: left;
+  width: 700px;
+  font-size: 20px;
+  color: lightcoral;
+}
+
+.instruction-image {
+  float: right;
+  width: 250px;
+  height: 220px;
+}
