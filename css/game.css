@@ -28,10 +28,15 @@ h1 {
   position: relative;
 }
 
+canvas {
+  display: inline;
+  border: 5px solid black;
+}
+
 #score {
   float: right;
   position: absolute;
-  right: 50%;
+  right: 30%;
 }
 
 ul {
@@ -54,11 +59,6 @@ a {
   padding: 10px;
   color: black;
   font-size: 20px;
-}
-
-canvas {
-  display: inline;
-  border: 5px solid black;
 }
 
 .instruction-box {
