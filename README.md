@@ -26,9 +26,19 @@ The game will implement:
 
 It will also have multiple scripts:
 
-`game.js` which will handle the logic for when the game is over.
+`ai_fish.js` handles the logic for creating an NPC fish.
 
-`fish.js` which will keep track of fish size, position, movement, and eat handling logic.
+`game_view.js` handles the rerendering of the game and binds the keys for player movement.
+
+`game.js` handles the game logic to check if the game is over, populates the game with characters, and other general gameplay features.
+
+`moving_fish.js` parent class for `AIFish` and `playerFish`.
+
+`player_fish.js` handles the logic for the player's character, such as movement and interacting with other fish.
+
+`sea_no_evil.js` entry file for webpack.
+
+`util.js` handles wrapping of fish when moving off of screen. 
 
 ## Implementation Timeline
 
