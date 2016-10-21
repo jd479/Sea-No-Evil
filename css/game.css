@@ -16,6 +16,13 @@ h1 {
   padding: 12px;
 }
 
+h2 {
+  font-size: 20px;
+  color: tomato;
+  float: left;
+  padding: 26px 12px 12px 12px;
+}
+
 .group {
   clear: both;
   display: block;
