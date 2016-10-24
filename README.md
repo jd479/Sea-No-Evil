@@ -1,66 +1,40 @@
 # Sea No Evil
 
-## Background
+[Live][game]
+[game]: http://jeffdu.com/Sea-No-Evil/
 
-Sea No Evil is a JavaScript game based off of Fishy. The player starts out as a tiny fish in a tank that must eat smaller fish in order to grow in hopes of becoming the Tank Titan.
 
-## MVP
+Sea No Evil is a JavaScript game based off of Fishy. The player starts out as a tiny shark in a tank that must eat smaller fish in order to grow in hopes of becoming the Tank Titan.
 
-Users will be able to:
-
-  0. move the fish around using the keyboard
-  0. unlock achievements based on their success in the game
-    0. costumes
-
-The project will include:
-
-  0. a modal for a brief tutorial of the game
-  0. a production README
+![fishy]
 
 ## Technologies
 
-The game will implement:
+The game is created using vanilla JavaScript to handle the logic of all the gameplay and HTML5's Canvas to animate objects as they move across the screen. The application also implements Keymaster in order to receive feedback from the user (through keys WASD).
 
-  0. vanilla JavaScript
-  0. `HTML5 Canvas` for fish model rendering
+_Reading commands from the user:_
+```javascript
+  bindKeyHandler() {
+    const player = this.player;
+    Object.keys(GameView.MOVES).forEach((k) => {
+      let move = GameView.MOVES[k];
+      key(k, () => { player.swim(move); });
+    });
+    key('q', () => { player.brake(); });
+    key('e', () => { player.brake(); });
+  }
 
-It will also have multiple scripts:
+  GameView.MOVES = {
+    "w": [ 0, -1.5],
+    "a": [-2,  0],
+    "s": [ 0,  1.5],
+    "d": [ 2,  0],
+  };
+```
 
-`ai_fish.js` handles the logic for creating an NPC fish.
+## Future direction:
 
-`game_view.js` handles the rerendering of the game and binds the keys for player movement.
+0. Implement power-ups that the user can collect in order have more dynamic gameplay.
+0. Install a system that allows the user to customize the appearance of their player model.
 
-`game.js` handles the game logic to check if the game is over, populates the game with characters, and other general gameplay features.
-
-`moving_fish.js` parent class for `AIFish` and `playerFish`.
-
-`player_fish.js` handles the logic for the player's character, such as movement and interacting with other fish.
-
-`sea_no_evil.js` entry file for webpack.
-
-`util.js` handles wrapping of fish when moving off of screen. 
-
-## Implementation Timeline
-
-__Day 1__: Install all necessary packages downloaded and ready to use. Have the basic outline ready for the two script files. Have `webpack` running and saving successfully.
-
-Goals:
-  0. Render fish models and background after learning Canvas.
-
-__Day 2__: Implement logic for reading keydown inputs from the user to move the user fish. Implement logic for "AI" fish (just horizontally).
-
-Goals:
-  0. Complete `fish.js` script file
-
-__Day 3__: Implement logic for detecting if the game is over. Create modal for tutorial.
-
-Goals:
-
-  0. Complete `game.js`
-  0. Make the game aesthetically pleasing
-
-__Day 4__: Add costumes for the user to customize appearance.
-
-## Bonus:
-
-Collectible power-ups for more dynamic gameplay.
+[fishy]: ./images/fishy.png
