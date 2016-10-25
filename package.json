@@ -1,0 +1,25 @@
+{
+  "name": "sea-no-evil",
+  "version": "1.0.0",
+  "description": "[Live][game] [game]: http://jeffdu.com/Sea-No-Evil/",
+  "main": "webpack.config.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jd479/Sea-No-Evil.git"
+  },
+  "author": "Jeffrey Du",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jd479/Sea-No-Evil/issues"
+  },
+  "homepage": "https://github.com/jd479/Sea-No-Evil#readme",
+  "devDependencies": {
+    "vanilla-modal": "^1.3.0"
+  }
+}

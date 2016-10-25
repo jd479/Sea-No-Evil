@@ -10,7 +10,7 @@ Sea No Evil is a JavaScript game based off of Fishy. The player starts out as a 
 
 ## Technologies
 
-The game is created using vanilla JavaScript to handle the logic of all the gameplay and HTML5's Canvas to animate objects as they move across the screen. The application also implements Keymaster in order to receive feedback from the user (through keys WASD).
+The game is created using vanilla JavaScript to handle the logic of all the gameplay and HTML5's Canvas to animate objects as they move across the screen. The application also utilizes the KeyMaster library in order to receive feedback from the user (through keys WASD).
 
 _Reading commands from the user:_
 ```javascript
@@ -25,10 +25,10 @@ _Reading commands from the user:_
   }
 
   GameView.MOVES = {
-    "w": [ 0, -1.5],
-    "a": [-2,  0],
-    "s": [ 0,  1.5],
-    "d": [ 2,  0],
+    "w": [ 0, -4.5 ],
+    "a": [ 6, 0 ],
+    "s": [ 0, 4.5 ],
+    "d": [ -6, 0 ],
   };
 ```
 
