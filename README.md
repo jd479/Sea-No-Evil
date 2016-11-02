@@ -6,7 +6,7 @@
 
 Sea No Evil is a JavaScript game based off of Fishy. The player starts out as a tiny shark in a tank that must eat smaller fish in order to grow in hopes of becoming the Tank Titan.
 
-![fishy]
+![gameplay]
 
 ## Technologies
 
@@ -37,4 +37,4 @@ _Reading commands from the user:_
 0. Implement power-ups that the user can collect in order have more dynamic gameplay.
 0. Install a system that allows the user to customize the appearance of their player model.
 
-[fishy]: ./images/fishy.png
+[gameplay]: ./images/gameplay.gif
