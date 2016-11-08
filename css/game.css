@@ -79,12 +79,17 @@ a {
   color: lightcoral;
 }
 
-.instruction-image {
+.instruction-image, .death-image {
   float: right;
   width: 250px;
   height: 220px;
   margin-left: 10px;
   margin-top: 50px;
+}
+
+.death-image {
+  width: 225px;
+  height: 200px;
 }
 
 .modalDialog {
@@ -102,6 +107,7 @@ a {
     transition: opacity 400ms ease-in;
     pointer-events: none;
 }
+
 .modalDialog:target {
     opacity:1;
     pointer-events: auto;
@@ -120,6 +126,7 @@ a {
     height: 250px;
     font-family: 'Gloria Hallelujah', cursive;
 }
+
 .close {
     background: #606061;
     color: #FFFFFF;
@@ -140,7 +147,7 @@ a {
 }
 
 .close:hover {
-    background: #00d9ff;
+  background: #00d9ff;
 }
 
 .directions-text {
@@ -158,7 +165,6 @@ a {
 
 .gameOver-title {
   color: red;
-  font-size: 30px;
 }
 
 #gameOver-text {
